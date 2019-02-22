@@ -22,11 +22,13 @@ void main(int argc, char* argv[]){
     char encrypt[26];
     char decrypt[26];
     int option;
+
     //get option and key
     FILE *fin, *fout;
 
+    //Make sure the application is passed the correct number of arguments
     if(argc != 5){
-        printf("This program takes more arguements");
+        printf("This program takes more arguments");
         exit(1);
     }
     
@@ -49,6 +51,8 @@ void main(int argc, char* argv[]){
     }
 }
 
+//Check if a character is found in a string (Character Array).
+//This function is passed an integer that will limit the length of the search.
 int found(char list[], int n, char target){
 
     int cur = 0;
@@ -65,6 +69,8 @@ int found(char list[], int n, char target){
     }
 }
 
+//This function is used to populate the encrypt array
+//It is used regardless if we are encrypting or decrypting.
 void initializeEncryptArray(char key[], char encrypt[]){
 
     //Copy key to encrypt array, and eliminate duplicates
@@ -96,6 +102,8 @@ void initializeEncryptArray(char key[], char encrypt[]){
 
 }
 
+//This function is used when we are decrypting and already encrypted message.
+//It will populate the array that is used to decrypt the text.
 void initializeDecryptArray(char encrypt[], char decrypt[]){
 
     char alphabet[] = {'a', 'b', 'c', 'd', 'e', 'f', 'g', 'h', 'i', 'j', 'k', 'l', 'm', 'n', 'o', 'p', 'q', 'r', 's', 't', 'u', 'v', 'w', 'x', 'y', 'z'};
@@ -107,6 +115,7 @@ void initializeDecryptArray(char encrypt[], char decrypt[]){
 
 }
 
+//This functction will process the input file and put the results into the output file
 void processInput(FILE * inf, FILE * outf, char substitute[]){
 
     char ch;
