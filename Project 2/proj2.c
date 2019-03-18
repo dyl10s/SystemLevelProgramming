@@ -79,7 +79,6 @@ void main(int argc, char *argv[]) {
 	}
 
 	showList(list);
-	system("pause");
 }
 
 void moveFinder(char* finder, char next) {
