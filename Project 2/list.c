@@ -42,7 +42,9 @@ int removeValue(char* value, LINK head)
 	while (!isEmpty(head)) {
 		if (strcmp(head->next->word, value) == 0) {
 			int tempValue = head->next->count;
+			free(head->next);
 			head->next = head->next->next;
+			
 			return tempValue;
 		}
 		else {
