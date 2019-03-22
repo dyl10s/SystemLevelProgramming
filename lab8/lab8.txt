@@ -1,0 +1,9 @@
+while read data1 data2
+do 
+    if [ ! -d $data1 ]
+    then
+    mkdir $data1
+    fi
+    touch $data1/$data2
+done < lab8.dat
+echo $data1

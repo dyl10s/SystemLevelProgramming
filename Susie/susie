@@ -1,0 +1,14 @@
+#Best text editor
+touch $1
+: > $1
+
+while read line1
+do
+    if [ $line1 == 'backspace' ]
+    then
+        break
+    fi
+    echo $line1 >> $1
+done
+
+echo thanks for using susie
