@@ -1,0 +1,8 @@
+echo "This is a test string" | tr '[A-Za-z]' '[E-ZA-De-za-d]'
+echo "Xlmw mw e xiwx wxvmrk" | tr '[E-ZA-De-za-d]' '[A-Za-z]'
+
+key="while"
+key2="end"
+grep -l $key2 $( grep -l $key * )
+
+
