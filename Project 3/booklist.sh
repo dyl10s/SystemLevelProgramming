@@ -1,6 +1,3 @@
-trap 'echo You cant leave like that dog' 2
-trap 'echo You cant leave like that dog' 20
-
 while [ true ]
 do
     if [ ! $# -eq 1 ]

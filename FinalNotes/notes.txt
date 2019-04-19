@@ -1,0 +1,69 @@
+Below will be on the final
+
+1)
+File Systems
+
+Ordinary
+Directory
+Special
+
+2)
+Access Permissions
+
+Type of users
+Type of file operation
+chmod
+
+3) 
+Wildcards
+
+? * [ ]
+
+4)
+I/O redirection
+
+read, printf, echo
+<, >, >>
+
+5)
+Variables
+
+environment/standard
+local varibles
+command line arguments
+
+6)
+Control Structures
+
+Test or [ ]
+    - String
+    - Numerical
+    - Special ( -f -d )
+if
+for
+while
+case
+
+7)
+Regex and Extended Regex
+
+Delimiter
+Literal
+., [ ], [^ ], *, ^, $
++, ?, |, ( ), { }
+
+grep, gawk, sed, find (replace, remove, insert)
+
+8)
+Script Execution
+
+Sequential => pipe of semicolon
+Parallel => & run in background
+Conditional => && or ||
+
+9)
+Links
+Hard, soft/symbolic
+
+10)
+Function
